@@ -1,10 +1,9 @@
 import  express  from "express"
+import  {getAllGenders} from './../controllers/Gender/getAllGenders'
 const router = express.Router()
 
 
-router.get('/', () => {
-    return "hola"
-})
+router.get('/', getAllGenders)
 
 
 
