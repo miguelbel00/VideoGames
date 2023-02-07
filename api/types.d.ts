@@ -2,11 +2,10 @@ export interface VideoGame {
     id: string;
     name: string;
     description: string;
-    release: string;
+    released: string;
     rating: double;
-    plataforms: string;
+    platforms: Array<string>;
     image: string;
-    created: boolean;
 }
 
 
