@@ -22,7 +22,7 @@ app.use('/', (_req,res) => {
 
 
 //{ force: true }
-conn.sync({ force: true }).then(() => {
+conn.sync().then(() => {
     
     app.listen(process.env.PORT || 3001, ()=> {
         console.log(`app running on port ${process.env.PORT || 3001}`)
